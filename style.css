@@ -10,11 +10,3 @@ header {
     background-color: red;
     display: flex;
 }
-
-nav {
-    display: flex;
-}
-
-ul {
-    justify-content: space-evenly;
-}
