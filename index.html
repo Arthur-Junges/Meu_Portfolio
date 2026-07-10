@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="cursor"></div>
     <header>
         <p id="name"> &lt; ArthurJunges /&gt;</p>
         <nav>
@@ -18,35 +19,55 @@
     </header>
 
     <section id="um">
-        <h3> <i class="fa-solid fa-circle"></i> Disponível para Projetos</h3>
-        <h1>Desenvolvedor em Construção</h1>
+        
+        <h1>Desenvolvedor <br> em <span class="palavra">Construção</span></h1>
         <p>Aprendendo a transformar linhas de código em experiências reais. <br> Construindo a cada dia uma função por vez</p>
 
-        <button> Ver Habilidades</button>
+        <div id="botoes">
+            <button id="btum"> Ver Habilidades</button>
+            <button id="btdois"> Contato </button>
+        </div>
     </section>
     <section id="dois">
-        <h2>HTML ✦ CSS ✦ JavaScript ✦ React ✦ PostgreSQL</h2>
+        <div class="marquee">
+        <div class="track">
+            <h2> HTML ✦ CSS ✦ JavaScript ✦ React ✦ PostgreSQL ✦ Node</h2>
+            <h2> HTML ✦ CSS ✦ JavaScript ✦ React ✦ PostgreSQL ✦ Node</h2>
+        </div>
+    </div>
+        
 
         <div id="info">
-            <p> //sobre</p>
-            <h3>Inicio de uma <span>jornada</span></h3>
+            <div id="esquerda">
+                <p class="code"> //SOBRE</p>
+                <h3>Inicio de uma <span class="palavra">jornada</span></h3>
+            </div>
 
-            <p>Estou em formação como desenvolvedor, cursando Engenharia de Software e tenho direcionado meus estudos para o desenvolvimento web, trabalhando com HTML, CSS, JavaScript, React e PostgreSQL.
-            Gosto de entender como as tecnologias funcionam na prática e de resolver problemas por meio do código. Cada projeto é uma oportunidade de aprimorar minhas habilidades, experimentar novas soluções e evoluir como desenvolvedor.
-                <div id="infodois">
-                    <h4>STACK</h4>
-                    <p>Full-Stack</p>
-                    <h4>FOCO</h4>
-                    <p>Front-End</p>
-                    <h4>STATUS</h4>
-                    <p>Estudando</p>
-                </div>
-            </p>
+            <div id="direita">
+                <p>Estou em formação como desenvolvedor, cursando Engenharia de Software e tenho direcionado meus estudos para o desenvolvimento web, trabalhando com HTML, CSS, JavaScript, React, PostgreSQL e Node. <br> <br>
+                Gosto de entender como as tecnologias funcionam na prática e de resolver problemas por meio do código. Cada projeto é uma oportunidade de aprimorar minhas habilidades, experimentar novas soluções e evoluir como desenvolvedor. </p>
+                    <div id="infodois">
+                        <div class="atributos">
+                            <h4>STACK</h4>
+                            <p>Full-Stack</p>
+                        </div>
+
+                        <div class="atributos">
+                            <h4>FOCO</h4>
+                            <p>Front-End</p>
+                        </div>
+
+                        <div class="atributos">
+                            <h4>STATUS</h4>
+                            <p>Estudando</p>
+                        </div>
+                    </div>
+            </div>
         </div>
     </section>
 
     <section id="tres">
-        <h3>//Skills</h3>
+        <h3 class="code">//Skills</h3>
         <h1>Caixa de Ferramentas</h1>
         <p>Tecnologia que estou usando e estudando agora</p>
 
@@ -82,8 +103,8 @@
     </section>
 
     <section id="quatro">
-        <h3>//Contato</h3>
-        <h1>Vamos <span>construir</span> algo juntos?</h1>
+        <h3 class="code">//Contato</h3>
+        <h1>Vamos <span class="palavra">construir</span> algo juntos?</h1>
     </section>
     <script src="script.js"></script>
 </body>
