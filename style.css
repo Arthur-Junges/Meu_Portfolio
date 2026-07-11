@@ -51,14 +51,24 @@ body {
 }
 
 header {
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background: rgba(2, 4, 4, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 header > p {
     padding-top: 25px;
     padding-left: 30px;
+    padding-bottom: 15px;
     font-size: large;
 }
 
@@ -71,10 +81,15 @@ ul {
     padding: 15px;
     padding-top: 25px;
     font-size: large;
+
+}
+
+ul a {
+    text-decoration: none;
     color: #6d717c;
 }
 
-ul:hover {
+ul a:hover {
     color: #49ce56;
     cursor: pointer;
 }
@@ -132,6 +147,7 @@ ul:hover {
 #botoes > #btdois {
     background-color: #050807;
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.185);
     transition: all 0.3s ease;
 }
 
@@ -331,6 +347,7 @@ ul:hover {
 
 @media (max-width: 1200px) {
 
+
     #um h1 {
         font-size: 5.5em;
     }
@@ -365,6 +382,10 @@ ul:hover {
 }
 
 @media (max-width: 992px) {
+
+    #cursor {
+        display: none;
+    }
 
     header {
         padding: 0 20px;
@@ -424,6 +445,10 @@ ul:hover {
 
 
 @media (max-width: 768px) {
+
+    #cursor {
+        display: none;
+    }
 
     header > p {
         padding-left: 15px;
@@ -493,12 +518,19 @@ ul:hover {
 
 @media (max-width: 480px) {
 
+    #cursor {
+        display: none;
+    }
 
     #cursor {
         width: 150px;
         height: 150px;
     }
 
+    header {
+         backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
 
     header > p {
         font-size: medium;
