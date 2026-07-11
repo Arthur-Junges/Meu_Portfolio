@@ -5,7 +5,7 @@ h1, h2, h3 {
     font-family: "Space Grotesk", sans-serif;
 }
 
-* {
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ ul:hover {
     margin-bottom: 30px;
 }
 
-#um #botoes {
+ #botoes {
    display:flex;
    justify-content: center;
    align-items: center;
@@ -108,17 +108,30 @@ ul:hover {
     font-size: larger;
 }
 
-#um #botoes > #btum {
+#botoes > #btum {
     background-color: #47ac51;
     box-shadow: 0px 0px 50px 0px  #47ac5175 ;
+    transition: all 0.3s ease;
 }
 
-#um #botoes > #btdois {
+#botoes > #btum:hover {
+    font-size:1.3em ;
+    transition: all 0.3s ease;
+}
+
+#botoes > #btdois {
     background-color: #050807;
     color: white;
+    transition: all 0.3s ease;
 }
 
-#um #botoes> button:hover {
+#botoes > #btdois:hover {
+    background-color: white;
+    color: #050807;
+    transition: all 0.3s ease;
+}
+
+ #botoes> button:hover {
     cursor: pointer;
 }
 
@@ -196,7 +209,7 @@ ul:hover {
     font-size: 3.8em;
 }
 
-#tres h3 {
+ h3 {
     text-align: center;
     font-weight: lighter;
     font-size: medium;
@@ -210,10 +223,86 @@ ul:hover {
 #tabela {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-top: 70px;
 }
 
 .linguagens {
     background-color: #04050b;
-    width: 300px;
+    width: 380px;
     height: 150px;
+    border-radius: 25px;
+    border: 1px solid #1c2e24;
+    margin: auto;
+}
+
+.linguagens:hover {
+    transform: translateY(-5px);
+    transition: all ease 1.0s;
+}
+
+.linguagens h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.linguagens h4 {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -28px;
+}
+
+.barra {
+    width: 250px;
+    height: 10px;
+    background:#152321;
+    border-radius: 10px;
+    overflow:hidden;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.progresso {
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.linguagens .por {
+    color: white;
+    font-size: small;
+    margin-top: 15px;
+    text-align: left;
+    width: 150px;
+}
+
+#quatro {
+    padding-top: 140px;
+
+     background-image:
+        radial-gradient(ellipse at top, oklch(0.78 0.19 145 / 0.15), transparent 60%),
+        radial-gradient(ellipse at bottom right, oklch(0.72 0.21 320 / 0.12), transparent 50%);
+}
+
+#final {
+    width: 50%;
+    margin: auto;
+}
+
+#final h1 {
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 5.0em;
+}
+
+#final p {
+    color: #517e9c;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#final #botoes {
+    padding-bottom: 80px;
 }
