@@ -14,14 +14,16 @@ h1, h2, h3 {
 
 #cursor {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    background: #73ca3cc4;
+    top: 0;
+    left:0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.35) 0%, rgba(72, 222, 128, 0) 70%);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 20px #00bfff;
     z-index: 9999;
+    filter: blur(40px);
 }
 
 .code {
@@ -36,6 +38,7 @@ h1, h2, h3 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color:transparent;
+    font-style: italic;
 }
 
 body {
@@ -185,5 +188,32 @@ ul:hover {
 }
 
 #tres {
-    margin-top: 34759px;
+   margin-top: 270px;
+}
+
+#tres h1 {
+    text-align: center;
+    font-size: 3.8em;
+}
+
+#tres h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+#tres p {
+    text-align: center;
+    color: #8a8f9c;
+}
+
+#tabela {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.linguagens {
+    background-color: #04050b;
+    width: 300px;
+    height: 150px;
 }
