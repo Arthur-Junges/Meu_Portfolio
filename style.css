@@ -528,8 +528,17 @@ ul a:hover {
     }
 
     header {
-         backdrop-filter: none;
+          position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        z-index: auto;
+
+        backdrop-filter: none;
         -webkit-backdrop-filter: none;
+
+        background: transparent;
+        border-bottom: none;
     }
 
     header > p {
